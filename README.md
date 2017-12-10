@@ -10,7 +10,7 @@
 
 0. 依赖库：scikit-learn， numpy， PIL库.
 
-1. 程序入口：test.py（demo.py）
+1. 程序入口：test.py
 在命令行中：python test.py即可
 test.py中的lrate是GBDT的学习率，k是树的深度，lrate和k是GBDT中非常重要的参数。
 
