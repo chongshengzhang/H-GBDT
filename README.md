@@ -10,7 +10,7 @@
 % 联系方式： 请同时发送邮件至： 于珂珂(1416560660@qq.com)  张重生(chongsheng.zhang@yahoo.com) 进行咨询
 
 
-0. 依赖库：scikit-learn， numpy， PIL库.
+0. 依赖库：Scikit-learn,  numpy, OpenCV, Python Imaging Library (PIL).
 
 1. 程序入口：test.py
 在命令行中：python test.py即可
