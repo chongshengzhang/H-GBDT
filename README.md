@@ -32,4 +32,4 @@ config.ini中程序配置信息
    融合特征：gabor_hog、gabor_lbp、hog_lbp
    级联特征：gaborHog、lbpHog、lbpgabor
 
-
+4. BioidErrResult.py 检测误差平均值
