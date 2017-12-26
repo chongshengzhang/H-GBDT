@@ -24,7 +24,10 @@ def getImage(lines, BASE_DIR):
         height = int(imageInfo[4])
         # print (image)
         # roi = image[y:y + width, x:x + height]
-        roi = image[y:y + width, x:x + height, :]
+        try:
+            roi = image[y:y + width, x:x + height, :]
+        except:
+            roi=roi
         # print(roi.shape)
         image_jar['rgb'].append(cv2.resize(roi, (imgSize, imgSize)))
         # print (cv2.resize(roi, (imgSize, imgSize))[:, :, 0])
