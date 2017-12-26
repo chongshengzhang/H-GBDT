@@ -35,3 +35,41 @@ config.ini中程序配置信息
    级联特征：gaborHog、lbpHog、lbpgabor
 
 4. BioidErrResult.py 检测误差平均值
+
+------------------
+详见H-GBDT-Master使用文档。
+
+                           H-GBDT 使用文档
+            本文档由河南大学大数据研究中心2017级硕士研究生-付飞飞-验证整理
+            
+1.	安装python环境
+建议下载安装anaconda，在官网（https://www.anaconda.com/download/
+）下载对应的版本，本文以Windows10+python3.5为例。
+ 
+双击下载完成后的Anaconda3-5.0.1-Windows-x86_64.exe文件，进行安装。一直点下一步即可。
+
+ 
+安装完成后，打开windows的命令提示符：
+输入conda list 就可以查询现在安装了哪些库，常用的numpy, scipy名列其中。如果你还有什么包没有安装上，可以运行
+conda install ***  来进行安装。（***为需要的包的名称，例如conda install numpy）
+如果某个包版本不是最新的，运行 conda update *** 就可以更新了。
+在cmd中输入python，可以看到如下信息，至此python安装完成。
+ 
+
+2.	使用pip安装依赖库Scikit-learn+numpy+OpenCV+Python Imaging Library (PIL)
+pip install Scikit-learn 
+Pip install numpy 
+pip install opencv-python 
+pip install PIL
+
+
+3.	在控制台输入python test.py进行测试。
+【注意：
+python3.*环境中，feature_gabor.py可能会出错，如果出现以下错误
+ModuleNotFoundError: No module named 'base_feature'
+
+可以把from base_feature import BaseFeature改为
+from .base_feature import BaseFeature as BaseFeature 
+】
+
+Ubantu下同上。
