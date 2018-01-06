@@ -85,4 +85,4 @@ ModuleNotFoundError: No module named 'base_feature'
 from .base_feature import BaseFeature as BaseFeature 
 】
 
-Ubantu下同上。
+Ubuntu下同上。
